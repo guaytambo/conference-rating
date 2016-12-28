@@ -8,13 +8,19 @@
 
 Install [Leiningen](http://leiningen.org/), if you don't already have it.
 
-* `lein run` starts server ([http://localhost:3000](http://localhost:3000))
-* `lein figwheel` starts cljs autocompiler
-* `lein less auto` starts the less compiler
+To run the app locally, you need to execute the following commands:
 
-* `lein cljsbuild test` to run tests
+* `./go serve-backend` starts server ([http://localhost:3000](http://localhost:3000))
+* `./go serve-frontend` starts cljs autocompiler
+* `./go serve-styles` starts the less compiler
 
-(you may need the first three running for development)
+Other useful commands are:
+
+* `./go unit-test` to run unit tests
+* `./go functional-test` to run functional tests
+* `./go test` to run all tests
+* `./go check-codestyle` to run code style recommendations
+
 
 ## Links
 
