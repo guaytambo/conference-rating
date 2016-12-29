@@ -40,10 +40,15 @@
 
 
   :plugins [[lein-environ "1.0.0"]
-            [lein-asset-minifier "0.2.2"]]
+            [lein-asset-minifier "0.2.2"]
+            [lein-cooper "1.2.2"]]
 
   :ring {:handler conference-rating.handler/app
          :uberwar-name "conference-rating.war"}
+
+  :cooper {"backend" ["lein" "run" "--" "--ssl-redirect-disabled"]
+           "frontend" ["lein" "figwheel"]
+           "styles" ["lein" "less" "auto"]}
 
   :min-lein-version "2.5.0"
 

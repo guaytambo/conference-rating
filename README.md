@@ -1,10 +1,20 @@
 # Conference-Tracking
 
 ## Status
+
 [![Build Status](https://snap-ci.com/SteffiPeTaffy/conference-rating/branch/master/build_image)](https://snap-ci.com/SteffiPeTaffy/conference-rating/branch/master)
 
+## Development (with Docker Compose)
 
-## Development
+Install [Docker Compose](https://docs.docker.com/compose/install/) and run:
+
+```bash
+docker-compose up
+```
+
+Then open [http://localhost:3000](http://localhost:3000).
+
+## Development (without Docker Compose)
 
 Install [Leiningen](http://leiningen.org/), if you don't already have it.
 
@@ -20,7 +30,6 @@ Other useful commands are:
 * `./go functional-test` to run functional tests
 * `./go test` to run all tests
 * `./go check-codestyle` to run code style recommendations
-
 
 ## Links
 

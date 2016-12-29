@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  clojure:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 3000:3000
+      - 3449:3449
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:3.4
